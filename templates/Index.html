@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<head>
+    <title>Calories Prediction App</title>
+
+    <link rel="stylesheet" type="text/css" href= "{{ url_for('static', filename='style.css') }}">
+
+<body>
+
+    <div class="Box" >
+        
+    </div>
+
+    <div class="Box_2" >
+        <h1>Calories Prediction</h1>
+
+        <form action="{{url_for('predict')}}" ,method="POST">
+
+            <p> Gender </p>
+            
+            <select name="gender">
+
+                <option value="" disabled selected hidden></option>
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+
+              </select>
+            
+            <p> Age </p>
+            <input type="text" name="age" placeholder="Enter User Age">
+
+            <p> Duration </p>
+            <input type="text" name="duration"  placeholder="Enter User Duration">
+
+            <p> Heart Rate </p>
+            <input type="text" name="heart_rate"  placeholder="Enter User Heart Rate">
+
+            <p> Temperature </p>
+            <input type="text" name="temp"  placeholder="Enter User Temperature">
+
+            <p> Height </p>
+            <input type="text" name="height"  placeholder="Enter User Height">
+
+            <p> weight </p>
+            <input type="text" name="weight"  placeholder="Enter User Weight">
+    
+            <input name=""  type="submit"  value="Predict" >
+
+            <input name="" type="reset" onclick="myFunction()" value="Clear" >
+            
+            <script src="C:\Users\SADARUWAN\PycharmProjects\Calories Prediction Webapp\static\script.js">
+
+            </script>
+    
+    
+        </form>
+
+
+    </div>
+
+
+</body>
+
+</head>
+
+
+
+
+</html>
