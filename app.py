@@ -4,10 +4,12 @@ import numpy as np
 from sklearn.preprocessing import StandardScaler
 from sklearn.ensemble import RandomForestRegressor
 from flask import Flask , render_template , request
+import gunicorn
 
-
+#load model
 model = pickle.load(open('Calories_model_RFR.pkl', "rb"))
 
+#load scaler
 scalerfile = 'scaler.save'
 scaler = pickle.load(open(scalerfile, 'rb'))
 
@@ -16,9 +18,8 @@ scaler = pickle.load(open(scalerfile, 'rb'))
 app = Flask(__name__)
 
 @app.route('/')
-
-@app.route('/main_template',methods=['GET'])
 def main_template():
+
     #render form
     return render_template('Index.html')
 
@@ -28,10 +29,10 @@ def main_template():
 def predict():
 
     #checking request type
-    req_str = request.method
+
 
     #convert string value into numeric value
-    if request.method == str(req_str):
+    if request.method == 'POST':
 
         if request.args.get('gender') == 'Male':
             gender = 1
