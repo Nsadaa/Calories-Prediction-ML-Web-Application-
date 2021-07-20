@@ -18,6 +18,8 @@ scaler = pickle.load(open(scalerfile, 'rb'))
 app = Flask(__name__)
 
 @app.route('/')
+
+@app.route('/main_template',methods=["GET"])
 def main_template():
 
     #render form
@@ -25,14 +27,13 @@ def main_template():
 
 #get form data
 @app.route('/predict',methods=['GET','POST'])
-
 def predict():
 
     #checking request type
-
+    str_req_type = request.method
 
     #convert string value into numeric value
-    if request.method == 'POST':
+    if request.method == str(str_req_type):
 
         if request.args.get('gender') == 'Male':
             gender = 1
@@ -67,7 +68,6 @@ def predict():
 
         #display predicted valuesin result.html file
         return  render_template('result.html', predicted_value=predicted[0])
-
 
     else:
 
