@@ -7,7 +7,7 @@
 
 ## View [Deployed Web Application](https://calories-prediction-ml-webapp.herokuapp.com/) In Cloud
 
-- Download Jupyter Notebook & Python Files : [Click Here](https://github.com/Nsadaa/Calories-Prediction-ML-Web-Application-/blob/main/Model%20Files/Model%20Files.rar?raw=true)
+- Download jupyter notebook & Python files corresponding to model implementation : [Click Here](https://github.com/Nsadaa/Calories-Prediction-ML-Web-Application-/blob/main/Model%20Files/Model%20Files.rar?raw=true)
 
 ### Objectives
 
