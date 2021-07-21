@@ -11,8 +11,7 @@
 
 ### Objectives
 
-- Analyse Dataset & get insightful factors based on it
-- Visulize derived data in effective ways
+- Exploratory data analyse & visualization about the data
 - identify the releationship between each attributes
 - Implement Regression model
 - Evaluate the model
