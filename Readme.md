@@ -37,6 +37,8 @@ This [Dataset](https://www.kaggle.com/fmendes/fmendesdat263xdemos) about,
 >
 >*Google Coloboration*
 >
+> *Pycharm IDE*
+>
 >*HTML*
 >
 >*CSS*
@@ -45,9 +47,9 @@ This [Dataset](https://www.kaggle.com/fmendes/fmendesdat263xdemos) about,
 >
 ### Resources
 
-https://www.python.org/
-https://pypi.org/
-https://id.heroku.com/login
-https://jupyter.org/
-https://www.kaggle.com/
-https://colab.research.google.com/notebooks/intro.ipynb?utm_source=scs-index
+- https://www.python.org/
+- https://pypi.org/
+- https://id.heroku.com/login
+- https://jupyter.org/
+- https://www.kaggle.com/
+- https://colab.research.google.com/notebooks/intro.ipynb?utm_source=scs-index
